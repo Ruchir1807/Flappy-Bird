@@ -16,10 +16,10 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(0, jumpAmt);
+            rb.linearVelocity = new Vector2(0, jumpAmt);
 
         }
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
 
